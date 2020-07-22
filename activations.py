@@ -24,3 +24,11 @@ def relu_backward(dA, cache):
     dZ[Z <= 0] = 0
 
     return dZ
+
+def softmax_backward(aL, Y):
+
+    dZ = np.subtract(aL, Y)
+
+    return dZ
+
+    
